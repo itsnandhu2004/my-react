@@ -2,34 +2,17 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('Build and Push Docker Image') {
             steps {
-                git branch: 'main', url: 'https://github.com/itsnandhu2004/my-react.git'
+                // Grant executable permissions to the build script
+                sh 'chmod 777 deploy.sh'
+
+                // Build the Docker image using the build script
+                sh './deploy.sh'
+
+                
             }
         }
-        stage('Build Docker Image') {
-            steps {
-                script {
-                    sh 'docker build -t nandhini1694/html-project:latest .'
-                }
-            }
-        }
-        stage('Push Docker Image') {
-            steps {
-                script {
-                    sh 'docker push nandhini1694/html-project:latest'
-                }
-            }
-        }
-        stage('Deploy to Kubernetes') {
-            steps {
-                script {
-                    sh '''
-                    kubectl apply -f kubernetes/deployment.yaml
-                    kubectl apply -f kubernetes/service.yaml
-                    '''
-                }
-            }
-        }
+
     }
 }
