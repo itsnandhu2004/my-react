@@ -10,14 +10,14 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh 'docker build -t html-project .'
+                    sh 'docker build -t nandhini1694/html-project:latest .'
                 }
             }
         }
         stage('Push Docker Image') {
             steps {
                 script {
-                    sh 'docker push html-project'
+                    sh 'docker push nandhini1694/html-project:latest'
                 }
             }
         }
