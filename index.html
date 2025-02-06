@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            padding-top: 50px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        /* Navigation Styles */
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            color: #f4a261;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2em;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        /* About Section */
+        #about {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            font-size: 1.2em;
+            width: 60%;
+            margin: 0 auto;
+            color: #555;
+        }
+
+        /* Skills Section */
+        #skills {
+            padding: 50px 0;
+            background-color: #f4f4f9;
+            text-align: center;
+        }
+
+        #skills h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            background-color: #fff;
+            padding: 20px;
+            width: 150px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .skill:hover {
+            transform: scale(1.05);
+        }
+
+        .skill h3 {
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        #contact p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Web Developer | Designer | Creative Thinker</p>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate web developer with expertise in HTML, CSS, JavaScript, and React. I strive to create beautiful and user-friendly websites that meet the needs of users and businesses. With a keen eye for design and a focus on responsive design, I enjoy creating web experiences that are both functional and visually appealing.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container">
+        <h2>My Skills</h2>
+        <div class="skills-list">
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Expert in HTML5 structure and semantics.</p>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Proficient in CSS3 and responsive design.</p>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Experienced with JavaScript and DOM manipulation.</p>
+            </div>
+            <div class="skill">
+                <h3>React</h3>
+                <p>Skilled in building dynamic web applications with React.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>If you'd like to work together or just say hello, feel free to get in touch!</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 My Portfolio | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
