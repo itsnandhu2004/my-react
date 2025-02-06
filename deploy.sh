@@ -17,8 +17,4 @@ docker tag port nandhini1694/portfolio
 # Push the image to Docker Hub
 docker push nandhini1694/portfolio
 
-# Apply Kubernetes deployment using kubectl
-kubectl create deployment p --image=nandhini1694/portfolio --port=80
-kubectl expose deployment p --type=NodePort --port=80
-
 
