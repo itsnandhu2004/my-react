@@ -22,6 +22,3 @@ kubectl create deployment p --image=nandhini1694/portfolio --port=80
 kubectl expose deployment p --type=NodePort --port=80
 
 
-# Check the status of the Kubernetes deployment
-kubectl get pods
-kubectl get svc
