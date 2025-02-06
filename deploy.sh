@@ -18,8 +18,9 @@ docker tag port nandhini1694/portfolio
 docker push nandhini1694/portfolio
 
 # Apply Kubernetes deployment using kubectl
-echo "Deploying to Kubernetes..."
-kubectl apply -f k8s-deployment.yaml
+kubectl create deployment p --image=nandhini1694/portfolio --port=80
+kubectl expose deployment p --type=NodePort --port=80
+
 
 # Check the status of the Kubernetes deployment
 kubectl get pods
